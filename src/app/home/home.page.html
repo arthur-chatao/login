@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Log
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-content>
+    Email:
+    <ion-input type="text" name="nome" [(ngModel)]="usuario.email"></ion-input>
+    Senha:
+    <ion-input type="password" name="telefone" [(ngModel)]="usuario.senha"></ion-input>
+    <ion-button (click)="logar()">Acessar</ion-button>
+    <ion-button href='cadastro'> Cadastrar </ion-button>
+  </ion-content>
+</ion-content>

@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Contato Salvar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-item>
+    <ion-label position="floating">Email:</ion-label>
+    <ion-input type="text" [(ngModel)]='usuario.email'></ion-input>
+  </ion-item>
+
+  <br>
+
+  <ion-item>
+    <ion-label position="floating">Senha: </ion-label>
+    <ion-input type="password" [(ngModel)]='usuario.senha'></ion-input>
+  </ion-item>
+  <br>
+
+  <ion-item>
+    <ion-label position="floating">Nome:</ion-label>
+    <ion-input type="text" [(ngModel)]='usuario.nome'></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Telefone:</ion-label>
+    <ion-input type="text" [(ngModel)]='usuario.telefone'></ion-input>
+  </ion-item>
+
+  <ion-button expand='full' (click)='salvar()'>Salavr Contato </ion-button>
+</ion-content>

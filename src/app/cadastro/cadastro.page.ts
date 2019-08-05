@@ -19,6 +19,7 @@ export class CadastroPage implements OnInit {
       this.fire.list('usuario').push(this.usuario.telefone);
       this.afAuth.auth.createUserWithEmailAndPassword(this.usuario.email, this.usuario.senha);
       this.usuario = new Usuario();
+      this.rota.navigate(['home'])
     }
   ngOnInit() {
   }
